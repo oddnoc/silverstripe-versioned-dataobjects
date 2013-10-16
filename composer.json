@@ -3,7 +3,7 @@
 	"description": "Adds versioned UI to CMS for non-SiteTree DataObjects",
 	"type": "silverstripe-module",
 	"homepage": "https://github.com/oddnoc/silverstripe-versioned-dataobjects",
-	"keywords": ["silverstripe", "cms", "versioned", "dataobject"],
+	"keywords": ["silverstripe", "framework", "versioned", "dataobject"],
 	"license": "MIT",
 	"authors": [
 		{
@@ -17,7 +17,6 @@
 		"issues": "https://github.com/oddnoc/silverstripe-versioned-dataobjects/issues"
 	},
 	"require": {
-		"silverstripe/cms": "~3.0",
 		"silverstripe/framework": "~3.0"
 	},
 	"extra": {
