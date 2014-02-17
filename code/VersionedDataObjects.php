@@ -9,24 +9,10 @@ class VersionedDataObjects extends DataExtension {
 		if ($member && Permission::checkMember($member, "ADMIN")) {
 			return true;
 		}
-
-		// Standard mechanism for accepting permission changes from extensions
-		$extended = $this->owner->extendedCan('canPublish', $member);
-		if ($extended !== null) {
-			return $extended;
-		}
-
-		// Normal case - fail over to canEdit()
 		return $this->owner->canEdit($member);
 	}
 
 	public function canDeleteFromLive($member = null) {
-		// Standard mechanism for accepting permission changes from extensions
-		$extended = $this->owner->extendedCan('canDeleteFromLive', $member);
-		if ($extended !== null) {
-			return $extended;
-		}
-
 		return $this->canPublish($member);
 	}
 
