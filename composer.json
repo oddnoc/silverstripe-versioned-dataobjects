@@ -1,6 +1,6 @@
 {
 	"name": "oddnoc/silverstripe-versioned-dataobjects",
-	"description": "Adds versioned UI to CMS for non-SiteTree DataObjects",
+	"description": "Adds versioned API to CMS for non-SiteTree DataObjects",
 	"type": "silverstripe-module",
 	"homepage": "https://github.com/oddnoc/silverstripe-versioned-dataobjects",
 	"keywords": ["silverstripe", "framework", "versioned", "dataobject"],
